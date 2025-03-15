@@ -178,3 +178,45 @@ footer {
     background-color: #333;
     color: #ccc;
 }
+/* Two Column Section */
+.two-column-section {
+    background-color: #ffffff;
+    padding: 60px 80px;
+}
+
+.two-column-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.column {
+    flex: 1;
+}
+
+.image-column img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.text-column h2 {
+    color: #a67c00;
+    margin-bottom: 20px;
+}
+
+.text-column p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.text-column ul {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.text-column ul li {
+    margin-bottom: 10px;
+}
