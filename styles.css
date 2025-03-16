@@ -200,8 +200,8 @@ footer {
 }
 
 .image-column img {
-    width: 100px;
-    height: 75px
+    width: 100%;
+    max-width: 400px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
