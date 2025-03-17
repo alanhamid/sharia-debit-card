@@ -11,38 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navbar -->
     <header class="hero">
         <nav class="navbar">
             <h2 class="logo">ShariaCard</h2>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <ul>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#benefits">Benefits</a></li>
                 <li><a href="#signup">Get Started</a></li>
             </ul>
         </nav>
+
         <div class="hero-content">
-                  <h1>Sharia Debit Card - <span>Premier Islamic Banking Made Simple</span></h1>                              
-                    <br>
+            <h1>Sharia Debit Card - <span>Premier Islamic Banking Made Simple</span></h1>
             <h2>Instant, secure, and compliant crypto and fiat transactions with your exclusive Sharia Debit Card.</h2>
         </div>
     </header>
-<!-- Two Column Section -->
-<section class="two-column-section">
-    <div class="container">
-        <div class="column image-column">
-            <img src="Feature3.jpg" alt="Sharia Crypto Card">
+
+    <!-- Two Column Section -->
+    <section class="two-column-section">
+        <div class="container">
+            <div class="column image-column">
+                <img src="Feature3.jpg" alt="Sharia Crypto Card">
+            </div>
+            <div class="column image-column">
+                <img src="PromoMeg2.jpg" alt="Sharia Crypto Card">
+            </div>
         </div>
-      
-        <div class="column image-column">
-            <img src="PromoMeg2.jpg" alt="Sharia Crypto Card">
-        </div>
-    </div>
-<div class="button-container">
+        <div class="button-container">
             <a href="#signup" class="cta-button">Reserve Your Card</a>
         </div>
+    </section>
 
-</section>
-
+    <!-- Features Section -->
     <section id="features" class="section">
         <h2>Card Features</h2>
         <div class="features-container">
@@ -64,22 +67,24 @@
         </div>
     </section>
 
+    <!-- Benefits Section -->
     <section id="benefits" class="section benefits">
         <div class="benefits-content">
             <h2>Why Choose Sharia Debit Card?</h2>
             <ul>
                 <li>Zero hidden fees</li>
                 <li>Top-notch security and privacy</li>
-                <li>World-wide acceptance</li>
+                <li>Worldwide acceptance</li>
                 <li>Seamless conversion between cryptocurrencies and fiat</li>
             </ul>
-            <h3>For a limited time, yours Sharia Debit Card comes pre-loaded with 20,000 Sharia Coins, a $20 value, as a welcome gift. </h3>
+            <h3>For a limited time, your Sharia Debit Card comes pre-loaded with 20,000 Sharia Coins, a $20 value, as a welcome gift.</h3>
         </div>
         <div class="benefits-image">
             <img src="ShariaCard.jpg" alt="Sharia Debit Card">
         </div>
     </section>
 
+    <!-- Signup Section -->
     <section id="signup" class="signup-section">
         <h2>Reserve Your Card Today</h2>
         <form action="#" method="post">
@@ -88,8 +93,17 @@
         </form>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Sharia Debit Card. All Rights Reserved.</p>
     </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar ul").classList.toggle("active");
+        }
+    </script>
+
 </body>
 </html>
