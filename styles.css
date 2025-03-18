@@ -294,4 +294,20 @@ footer {
     background: linear-gradient(45deg, #DAA520, #FFD700, #FFC107, #DAA520);
     box-shadow: 0 6px 12px rgba(255, 215, 0, 0.5);
 }
+.signup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+#hubspot-form-container {
+    width: 100%;
+    max-width: 450px; /* Adjust container size as needed */
+}
+
+#hubspot-form-container input {
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
