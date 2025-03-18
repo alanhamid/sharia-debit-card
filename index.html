@@ -86,13 +86,22 @@
     </section>
 
     <!-- Signup Section -->
-    <section id="signup" class="signup-section">
-        <h2>Reserve Your Card Today</h2>
-        <form action="#" method="post">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Join Waitlist</button>
-        </form>
-    </section>
+<section id="signup" class="signup-section">
+    <h2>Reserve Your Card Today</h2>
+    <div id="hubspot-form-container"></div>
+</section>
+
+<!-- HubSpot Form Embed -->
+<script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "242297237",
+    formId: "56f3a67f-3d42-4a47-9f94-946978ef766e",
+    region: "na2",
+    target: "#hubspot-form-container"
+  });
+</script>
+
 
     <!-- Footer -->
     <footer>
