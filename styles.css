@@ -195,6 +195,16 @@ a {
 }
 
 /* Buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers buttons horizontally */
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    gap: 15px; /* Space between buttons */
+}
+
 .cta-button, .gold-button {
     padding: 12px 24px;
     font-size: 16px;
@@ -202,6 +212,10 @@ a {
     border-radius: 25px;
     transition: all 0.3s ease;
     cursor: pointer;
+    width: 100%;
+    max-width: 300px; /* Ensures buttons have consistent width */
+    margin: 0 auto; /* Horizontally centers buttons */
+    text-align: center; /* Text alignment within button */
 }
 
 .cta-button {
@@ -224,6 +238,7 @@ a {
     background: linear-gradient(45deg, #DAA520, #FFD700, #FFC107, #DAA520);
     box-shadow: 0 6px 12px rgba(255,215,0,0.5);
 }
+
 
 /* Signup Section */
 .signup-section {
