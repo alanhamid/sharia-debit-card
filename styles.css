@@ -242,7 +242,7 @@ a {
 
 /* Signup Section */
 .signup-section {
-    background: linear-gradient(to right, #cccccc, #ffffff);
+    background: #ffffff;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
