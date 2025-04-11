@@ -97,57 +97,5 @@
     <div id="hubspot-form-container"></div>
 </section>
 
-<!-- HubSpot Form Embed -->  
-<script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
-<script>
-  // Function to retrieve a parameter by name from the URL
-  function getParameterByName(name, url = window.location.href) {
-      name = name.replace(/[\[\]]/g, '\\$&');
-      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-          results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, ' '));
-  }
-
-  hbspt.forms.create({
-    portalId: "242297237",
-    formId: "6b6bcfb7-0092-41fc-b8b0-2f9249ad66e9",
-    region: "na2",
-    target: "#hubspot-form-container",
-    onFormReady: function($form) {
-      // Get the influencer reference from the URL (using 'ref' as the parameter name)
-      var influencerParam = getParameterByName('ref');
-      if (influencerParam) {
-        // Set the value of the hidden field (make sure the field name matches what you set in HubSpot)
-        var hiddenField = $form.querySelector('input[name="influencer_ref"]');
-        if (hiddenField) {
-          hiddenField.value = influencerParam;
-        }
-      }
-
-      // Optional: adjust text and email inputs styling
-      const inputs = document.querySelectorAll("#hubspot-form-container input[type='text'], #hubspot-form-container input[type='email']");
-      inputs.forEach(input => {
-          input.style.maxWidth = "400px"; /* ~50 character length */
-          input.style.width = "100%";
-      });
-    }
-  });
-</script>
-
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Sharia Debit Card. All Rights Reserved.</p>
-    </footer>
-
-    <!-- Mobile Menu JavaScript -->
-    <script>
-        function toggleMenu() {
-            document.querySelector(".navbar ul").classList.toggle("active");
-        }
-    </script>
-
 </body>
 </html>
