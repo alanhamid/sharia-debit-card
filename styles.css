@@ -278,4 +278,9 @@ footer {
     border: 5px solid white;
     border-radius: 10px;
 }
+.button-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
 
