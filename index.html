@@ -127,6 +127,16 @@
           document.querySelector(".navbar ul").classList.toggle("active");
       }
     </script>
+<script>
+  function openLightbox() {
+    document.getElementById('lightbox').style.display = 'block';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+</script>
+
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
   <img id="lightbox-img" src="sjfvsSubscriptions.png" alt="Expanded Chart">
 </div>
