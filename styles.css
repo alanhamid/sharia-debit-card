@@ -46,6 +46,9 @@ a:hover {
     top: 0;
     z-index: 1000;
     color: white;
+        background-color: #fdfaf5; /* warm creamy white */
+    border-bottom: 1px solid #ddd;
+
 }
 .navbar ul {
     list-style: none;
@@ -299,6 +302,10 @@ footer {
 }
 .logo img {
     height: 40px;
+    width: auto;
+}
+navbar .logo img {
+    height: 50px;
     width: auto;
 }
 
