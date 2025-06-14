@@ -1,4 +1,3 @@
-from pathlib import Path
 
 # Define the updated styles.css content based on the user's changes and preferences
 styles_css_content = """
@@ -257,10 +256,26 @@ footer {
     background-color: #333;
     color: #ccc;
 }
-"""
+/* Lightbox Modal Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+}
 
-# Save the updated CSS file
-path = "/mnt/data/styles.css"
-Path(path).write_text(styles_css_content)
+.lightbox img {
+    margin: auto;
+    max-width: 90%;
+    max-height: 80vh;
+    border: 5px solid white;
+    border-radius: 10px;
+}
 
-path
