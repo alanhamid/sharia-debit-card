@@ -352,3 +352,36 @@ navbar .logo img {
   color: #009900;
 }
 
+.accordion {
+  background-color: #009900;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion:hover {
+  background-color: #007700;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #f9fff9;
+  border-left: 4px solid #009900;
+  margin-bottom: 15px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.panel p {
+  margin: 15px 0;
+}
+
