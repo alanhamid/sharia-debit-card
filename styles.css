@@ -1,22 +1,25 @@
-/* General Styles - Updated for background consistency */
+from pathlib import Path
+
+# Define the updated styles.css content based on the user's changes and preferences
+styles_css_content = """
+/* General Styles - Enhanced with Islamic Green & Gold */
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    color: #444;
-    background-color: #f4f4f4;
+    color: #333;
+    background-color: #fff;
     overflow-x: hidden;
 }
 
 h1, h2, h3 {
     margin-bottom: 15px;
+    color: #009900;
 }
 h1 {
     font-size: 36px;
     text-align: center;
-    color: #333;
 }
-
 h1 span {
     background: linear-gradient(45deg, #FFD700, #FFC107, #DAA520, #FFD700);
     -webkit-background-clip: text;
@@ -26,7 +29,10 @@ h1 span {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #009900;
+}
+a:hover {
+    color: #006600;
 }
 
 /* Navbar */
@@ -35,13 +41,13 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: linear-gradient(to right, #bfbfbf, #ffffff);
+    background: #009900;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    color: white;
 }
-
 .navbar ul {
     list-style: none;
     display: flex;
@@ -49,26 +55,23 @@ a {
     margin: 0 auto;
     padding: 0;
 }
-
 .navbar .logo {
     font-size: 24px;
     font-weight: 700;
-    color: #333;
+    color: #fff;
 }
-
 .menu-icon {
     display: none;
+    color: white;
 }
-
 @media (max-width: 768px) {
     .navbar {
         padding: 15px 20px;
     }
-
     .navbar ul {
         display: none;
         flex-direction: column;
-        background: #fff;
+        background: white;
         position: absolute;
         top: 60px;
         right: 10px;
@@ -76,11 +79,9 @@ a {
         padding: 15px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
     .navbar ul.active {
         display: flex;
     }
-
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -88,12 +89,12 @@ a {
     }
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     padding: 100px 20px 40px;
     text-align: center;
+    background-color: #f9fff9;
 }
-
 .hero-content h1 {
     font-size: 36px;
     line-height: 1.3;
@@ -106,7 +107,6 @@ a {
     align-items: center;
     gap: 30px;
 }
-
 .image-column img {
     width: 100%;
     max-width: 700px;
@@ -114,25 +114,23 @@ a {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
 @media (max-width: 768px) {
     .two-column-section .container {
         flex-direction: column;
     }
-
     .image-column img {
         max-width: 100%;
     }
 }
 
-/* Features Section */
+/* Features */
 .features-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding: 40px 20px;
 }
-
 .feature {
     background-color: white;
     padding: 20px;
@@ -141,54 +139,53 @@ a {
     text-align: center;
     max-width: 300px;
 }
-
 .feature img {
     width: 80px;
     height: 80px;
     object-fit: contain;
     margin-bottom: 15px;
 }
-
 @media (max-width: 768px) {
     .features-container {
         flex-direction: column;
         align-items: center;
     }
-
     .feature img {
         width: 60px;
         height: 60px;
     }
 }
 
-/* Benefits Section */
+/* Benefits */
 .benefits {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: #f9f9f9;
+    background-color: #f9fff9;
     padding: 40px 20px;
 }
-
 .benefits-content, .benefits-image {
     flex: 1;
     max-width: 500px;
 }
-
+.benefits-content ul {
+    padding-left: 20px;
+    line-height: 1.8;
+    list-style-type: disc;
+}
 .benefits-image img {
     width: 100%;
     max-width: 400px;
     height: auto;
     border-radius: 15px;
+    border: 2px solid #009900;
 }
-
 @media (max-width: 768px) {
     .benefits {
         flex-direction: column;
     }
-
     .benefits-image img {
         max-width: 100%;
     }
@@ -198,13 +195,12 @@ a {
 .button-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers buttons horizontally */
+    align-items: center;
     justify-content: center;
     width: 100%;
     margin-top: 40px;
-    gap: 15px; /* Space between buttons */
+    gap: 15px;
 }
-
 .cta-button, .gold-button {
     padding: 12px 24px;
     font-size: 16px;
@@ -213,34 +209,29 @@ a {
     transition: all 0.3s ease;
     cursor: pointer;
     width: 100%;
-    max-width: 300px; /* Ensures buttons have consistent width */
-    margin: 0 auto; /* Horizontally centers buttons */
-    text-align: center; /* Text alignment within button */
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
 }
-
 .cta-button {
-    background-color: #a67c00;
+    background-color: #009900;
     color: white;
 }
-
 .cta-button:hover {
-    background-color: #8b6b00;
+    background-color: #007700;
 }
-
 .gold-button {
     background: linear-gradient(45deg, #FFD700, #FFC107, #DAA520, #FFD700);
     color: black;
     border: none;
     box-shadow: 0 4px 8px rgba(255,215,0,0.3);
 }
-
 .gold-button:hover {
     background: linear-gradient(45deg, #DAA520, #FFD700, #FFC107, #DAA520);
     box-shadow: 0 6px 12px rgba(255,215,0,0.5);
 }
 
-
-/* Signup Section */
+/* Signup */
 .signup-section {
     background: #ffffff;
     padding: 60px 20px;
@@ -249,12 +240,10 @@ a {
     align-items: center;
     text-align: center;
 }
-
 #hubspot-form-container {
     width: 100%;
     max-width: 450px;
 }
-
 #hubspot-form-container input {
     box-sizing: border-box;
     padding: 10px;
@@ -268,3 +257,10 @@ footer {
     background-color: #333;
     color: #ccc;
 }
+"""
+
+# Save the updated CSS file
+path = "/mnt/data/styles.css"
+Path(path).write_text(styles_css_content)
+
+path
