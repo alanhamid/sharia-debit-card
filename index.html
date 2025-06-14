@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOS Virtual Card - Crypto Simplified</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Navbar -->
     <header class="hero">
         <nav class="navbar">
@@ -23,43 +21,29 @@
                 <li><a href="#signup">Sign-Up</a></li>
             </ul>
         </nav>
-
         <div class="hero-content">
-
             <h1>BOS Virtual Cards - <span>Brought to You By Bank of Sharia: Bridging Faith & DeFi</span></h1>
         </div>
     </header>
-<section id="benefits" class="section benefits">
-     <div class="benefits-content">
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section benefits">
+        <div class="benefits-content">
             <h2>Why Choose BOS Virtual Card?</h2>
-            <ul> 
-                 <li>Start with <strong>FREE Basic Subscription</strong></li>
+            <ul style="line-height: 1.8; padding-left: 20px;">
+                <li>Start with <strong>FREE Basic Subscription</strong></li>
                 <li>Frictionless and simple cross-border payments</li>
                 <li>Instant, secure, and compliant crypto and fiat transactions</li>
                 <li>Top-notch security and privacy</li>
                 <li>Worldwide acceptance: Anywhere MasterCard or Visa accepted</li>
                 <li>Seamless conversion between cryptocurrencies and fiat</li>
                 <li>Withdraw cash in local fiat at ATMs around the world</li>
-                <li>Whether you believe in after-life or not, this card let you earn rewards on you purchases and other transations, plus, 25% of your transaction fee goes to our Sadaqah Jariyah Fund: A fund created on blockchain to donate for the next 100 years to improve living conditions for all the humans who are suffering. You could learn more in the SJF section.</li>
-                <li>Plus, many more rewards and benefit. Click here to learn more ... </li>
+                <li>Your transactions contribute 25% of fees to the Sadaqah Jariyah Fund, aiding those in need for 100 years.</li>
+                <li>More rewards and benefits await. <a href="#">Click to learn more...</a></li>
             </ul>
-        </div>    
-   
+        </div>
         <div class="benefits-image">
             <img src="poster2Small.png" alt="BOS Virtual Card">
-        </div>
-    </section>
-    <!-- Two Column Section -->
-    <section class="two-column-section">
-        <div class="container">
-            <div class="column image-column">
-            </div>
-            <div class="column image-column">
-            </div>
-        </div>
-        <div class="button-container">
-            <button class="gold-button" onclick="window.open('https://shariacoindao.com/', '_blank')">Learn more</button>
-            <a href="#signup" class="cta-button">Reserve Your Card</a>
         </div>
     </section>
 
@@ -84,82 +68,64 @@
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section id="benefits" class="section benefits">
+    <!-- Mission Section -->
+    <section class="section benefits">
         <div class="benefits-content">
-            <div class="benefits-content">
-            
             <h2>Every BOS Card Counts. Every Transaction Helps.</h2>
             <p>By subscribing to the Bank of Sharia card, you're not just joining a financial revolution — you're directly contributing to a humanitarian mission. A portion of every transaction you make funds the <strong>Sadaqah Jariyah Fund (SJF)</strong>, which supports global initiatives that bring relief to communities suffering from poverty, conflict, and injustice. As more people use the BOS card, the fund grows — and with it, our collective impact. Your everyday spending becomes an act of ongoing charity.</p>
-             </div>
-            
         </div>
         <div class="benefits-image">
-            <img src="sjfvsSubscriptions.png" alt="BOS Virtual Card">
+            <img src="sjfvsSubscriptions.png" alt="SJF Growth Chart">
         </div>
     </section>
-    
-<!-- Signup Section -->
-<section id="signup" class="signup-section">
-         <div class="hero-content">
-         </div>
-    <h2>Reserve Your Card Today</h2>
-    <div id="hubspot-form-container"></div>
-</section>
 
-<!-- HubSpot Form Embed -->  
-<script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
-<script>
-  // Function to retrieve a parameter by name from the URL
-  function getParameterByName(name, url = window.location.href) {
-      name = name.replace(/[\[\]]/g, '\\$&');
-      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-          results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, ' '));
-  }
-
-  hbspt.forms.create({
-    portalId: "242297237",
-    formId: "6b6bcfb7-0092-41fc-b8b0-2f9249ad66e9",
-    region: "na2",
-    target: "#hubspot-form-container",
-    onFormReady: function($form) {
-      // Get the influencer reference from the URL (using 'ref' as the parameter name)
-      var influencerParam = getParameterByName('ref');
-      if (influencerParam) {
-        // Set the value of the hidden field (make sure the field name matches what you set in HubSpot)
-        var hiddenField = $form.querySelector('input[name="influencer_ref"]');
-        if (hiddenField) {
-          hiddenField.value = influencerParam;
-        }
-      }
-
-      // Optional: adjust text and email inputs styling
-      const inputs = document.querySelectorAll("#hubspot-form-container input[type='text'], #hubspot-form-container input[type='email']");
-      inputs.forEach(input => {
-          input.style.maxWidth = "400px"; /* ~50 character length */
-          input.style.width = "100%";
-      });
-    }
-  });
-</script>
-
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section">
+        <h2>Reserve Your Card Today</h2>
+        <div id="hubspot-form-container"></div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Sharia Debit Card. All Rights Reserved.</p>
     </footer>
 
-    <!-- Mobile Menu JavaScript -->
+    <!-- JavaScript -->
+    <script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
     <script>
-        function toggleMenu() {
-            document.querySelector(".navbar ul").classList.toggle("active");
+      function getParameterByName(name, url = window.location.href) {
+          name = name.replace(/[[\]]/g, '\\$&');
+          var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+              results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+
+      hbspt.forms.create({
+        portalId: "242297237",
+        formId: "6b6bcfb7-0092-41fc-b8b0-2f9249ad66e9",
+        region: "na2",
+        target: "#hubspot-form-container",
+        onFormReady: function($form) {
+          var influencerParam = getParameterByName('ref');
+          if (influencerParam) {
+            var hiddenField = $form.querySelector('input[name="influencer_ref"]');
+            if (hiddenField) {
+              hiddenField.value = influencerParam;
+            }
+          }
+          const inputs = document.querySelectorAll("#hubspot-form-container input[type='text'], #hubspot-form-container input[type='email']");
+          inputs.forEach(input => {
+              input.style.maxWidth = "400px";
+              input.style.width = "100%";
+          });
         }
+      });
+
+      function toggleMenu() {
+          document.querySelector(".navbar ul").classList.toggle("active");
+      }
     </script>
-
-
-
 </body>
 </html>
