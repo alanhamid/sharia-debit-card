@@ -283,4 +283,18 @@ footer {
     display: flex;
     justify-content: center;
 }
+.benefits-image-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.benefits-image-centered img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #009900;
+    margin-bottom: 20px;
+}
 
