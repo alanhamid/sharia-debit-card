@@ -259,28 +259,51 @@ footer {
     background-color: #333;
     color: #ccc;
 }
-/* Lightbox Modal Styles */
+/* Lightbox Styles */
 .lightbox {
     display: none;
     position: fixed;
     z-index: 9999;
-    padding-top: 60px;
-    left: 0;
     top: 0;
-    width: 100%;
+    left: 0;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.8);
-    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
 .lightbox img {
-    margin: auto;
     max-width: 90%;
     max-height: 80vh;
-    border: 5px solid white;
     border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    animation: zoomIn 0.3s ease-in-out;
 }
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+/* Animations */
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { background-color: rgba(0,0,0,0); }
+    to { background-color: rgba(0,0,0,0.85); }
+}
+
 .button-wrapper {
     margin-top: 20px;
     display: flex;
