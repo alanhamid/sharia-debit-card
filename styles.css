@@ -195,13 +195,31 @@ a:hover {
     border: 2px solid #009900;
 }
 @media (max-width: 768px) {
-    .benefits {
-        flex-direction: column;
-    }
-    .benefits-image img {
-        max-width: 100%;
-    }
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff; /* or #333 depending on your navbar background */
+  }
 }
+
 
 /* Buttons */
 .button-container {
