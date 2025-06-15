@@ -62,8 +62,7 @@ a:hover {
 .navbar .nav-links {
   list-style: none;
   display: flex;
-      flex-wrap: wrap; /* Allow wrapping on smaller screens */
-
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
   gap: 30px;
   margin: 0;
   padding: 0;
@@ -107,30 +106,7 @@ a:hover {
   }
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        padding: 15px 20px;
-    }
-    .navbar ul {
-        display: none;
-        flex-direction: column;
-        background: white;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        width: 200px;
-        padding: 15px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .navbar ul.active {
-        display: flex;
-    }
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        font-size: 28px;
-    }
-}
+
 
 /* Hero */
 .hero {
