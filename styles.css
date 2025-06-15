@@ -35,16 +35,19 @@ a:hover {
 
 /* Navbar */
 .navbar {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background: #009900;
+  background: #fffaf0; /* Creamy white background */
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  color: white;
+  color: #004400; /* Dark green text */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
 }
 
 .navbar .nav-links {
