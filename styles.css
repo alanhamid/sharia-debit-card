@@ -50,9 +50,20 @@ a:hover {
 
 }
 
+
+@media (min-width: 1024px) {
+  .nav-links li a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+
+
 .navbar .nav-links {
   list-style: none;
   display: flex;
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+
   gap: 30px;
   margin: 0;
   padding: 0;
