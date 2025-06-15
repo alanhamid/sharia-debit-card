@@ -39,7 +39,9 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 15px 40px;   
+    background-color: #fdfaf5; /* warm creamy white */
+    border-bottom: 1px solid #ddd;
   background: #009900;
   position: fixed;
   width: 100%;
