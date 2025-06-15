@@ -1,6 +1,4 @@
 
-# Define the updated styles.css content based on the user's changes and preferences
-styles_css_content = """
 /* General Styles - Enhanced with Islamic Green & Gold */
 body, html {
     margin: 0;
@@ -104,31 +102,10 @@ a:hover {
     padding: 10px 0;
     text-align: right;
   }
-}
 
-@media (max-width: 768px) {
-    .navbar {
-        padding: 15px 20px;
-    }
-    .navbar ul {
-        display: none;
-        flex-direction: column;
-        background: white;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        width: 200px;
-        padding: 15px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .navbar ul.active {
-        display: flex;
-    }
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        font-size: 28px;
-    }
+  .navbar {
+    padding: 15px 20px;
+  }
 }
 
 /* Hero */
@@ -234,32 +211,6 @@ a:hover {
     border-radius: 15px;
     border: 2px solid #009900;
 }
-@media (max-width: 768px) {
-  .navbar ul {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 200px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 1000;
-  }
-
-  .navbar ul.active {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-    font-size: 28px;
-    cursor: pointer;
-    color: #fff; /* or #333 depending on your navbar background */
-  }
-}
-
 
 /* Buttons */
 .button-container {
@@ -327,129 +278,3 @@ footer {
     background-color: #333;
     color: #ccc;
 }
-/* Lightbox Styles */
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    animation: fadeIn 0.3s ease-in-out;
-}
-
-.lightbox img {
-    max-width: 90%;
-    max-height: 80vh;
-    border-radius: 10px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.7);
-    animation: zoomIn 0.3s ease-in-out;
-}
-
-.lightbox-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    z-index: 10000;
-}
-
-/* Animations */
-@keyframes zoomIn {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-@keyframes fadeIn {
-    from { background-color: rgba(0,0,0,0); }
-    to { background-color: rgba(0,0,0,0.85); }
-}
-
-.button-wrapper {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-.benefits-image-centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.benefits-image-centered img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    border: 2px solid #009900;
-    margin-bottom: 20px;
-}
-.logo img {
-    height: 40px;
-    width: auto;
-}
-navbar .logo img {
-    height: 50px;
-    width: auto;
-}
-.faq {
-  background-color: #f9fff9;
-  padding: 60px 20px;
-}
-.faq-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-.faq-item {
-  background-color: #fff;
-  border-left: 4px solid #009900;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-.faq-item h3 {
-  margin-bottom: 10px;
-  color: #009900;
-}
-
-.accordion {
-  background-color: #009900;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.accordion:hover {
-  background-color: #007700;
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: #f9fff9;
-  border-left: 4px solid #009900;
-  margin-bottom: 15px;
-  border-radius: 0 0 8px 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.panel p {
-  margin: 15px 0;
-}
-
