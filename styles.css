@@ -429,3 +429,17 @@ navbar .logo img {
 .panel p {
   margin: 15px 0;
 }
+/* Adjust Hero image size and responsiveness */
+.hero-content .benefits-image-centered img {
+  width: 50%;         /* Desktop: half-width */
+  max-width: 500px;   /* Prevent excessive scale on large screens */
+  height: auto;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .hero-content .benefits-image-centered img {
+    width: 80%;       /* Wider on smaller devices for visibility */
+    max-width: none;
+  }
+}
