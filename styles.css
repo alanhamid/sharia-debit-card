@@ -431,7 +431,7 @@ navbar .logo img {
 }
 /* Adjust Hero image size and responsiveness */
 .hero-content .benefits-image-centered img {
-  width: 80%;         /* Desktop: half-width */
+  width: 85%;         /* Desktop: half-width */
   max-width: 500px;   /* Prevent excessive scale on large screens */
   height: auto;
 }
